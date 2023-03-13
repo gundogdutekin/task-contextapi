@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.task-create{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.task-edit{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.task-edit label{
+  width: 80%;
+  text-align: left !important;
+}
+.task-create .task-input{
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.task-edit .task-input{
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 6px 0px;
+  padding: 8px;
+}
+.task-create .task-button{
+  padding: 10px;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  
+}
+.task-edit .task-button{
+  padding: 8px;
+  border: 1px solid rgb(0, 66, 128);
+  background-color: rgb(0, 66, 128);
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin:5px 2px;
+}
+.task-list{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+.card{
+  margin: 35px;
+  border: 1px solid #2ebf2e;
+  border-radius: 10px;
+  
+  box-shadow: 2px 5px #e7fae7;
+  width:20%;
+  
+}
+.card-header{
+  border-bottom:1px solid #2ebf2e;
+  width: 100%;
+  text-align: center;
+  
+}
+.card-content{
+  padding: 10px;
+  width: 100%;
+}
+.card-footer{
+  border-top:1px solid #2ebf2e;
+  width: 100%;
+  text-align: center;
+}
+.task-list-button{
+  padding: 5px 20px;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin: 10px;
+}
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}
+.buton{
+  padding: 5px 20px;
+  border: 1px solid rgb(128, 55, 0);
+  background-color: rgb(128, 55, 0);
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin: 10px;
+}
+.editTask{
+  display: flex;
+  flex-direction: column;
+  
+}
+.danger{
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.button-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.sm{
+  width: 40%;
+}
+.md{
+  width: 50%;
+}
+.lg{
+  width: 60%;
+}
+.flex-graw-3{
+  flex-grow: 3;
+}
+.flex-graw-2{
+  flex-grow: 2;
+}
+.flex-graw-1{
+  flex-grow: 1;
+}
+
+

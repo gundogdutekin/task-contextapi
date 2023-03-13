@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "title": "Butoon oluşturulacak",
+      "task": "Sağ tarafta satın al butonu tekrar tasarlanacak",
+      "id": 4
+    },
+    {
+      "title": "Reklam girişi",
+      "task": "Facebook Reklamaları girilecek",
+      "id": 7
+    },
+    {
+      "title": "Site Sağ Kısmına",
+      "task": "Site sağ tarafa tarih eklencek.",
+      "id": 8
+    },
+    {
+      "title": "Menü ",
+      "task": "Sonsuz kategorili menü tasarımı yapılacak.",
+      "id": 9
+    },
+    {
+      "title": "Site Header Kısmı",
+      "task": "Site header kısmına logo eklenecek.",
+      "id": 12
+    },
+    {
+      "title": "Footer ",
+      "task": "Footer kısmına sosyal medya ikonları eklenecek.",
+      "id": 13
+    },
+    {
+      "title": "Login düzenleme",
+      "task": "Login sayfasına çift korumalı giriş eklenecek.",
+      "id": 14
+    }
+  ]
+}
