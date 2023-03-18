@@ -11,13 +11,8 @@
       "id": 7
     },
     {
-      "title": "Site Sağ Kısmına",
-      "task": "Site sağ tarafa tarih eklencek.",
-      "id": 8
-    },
-    {
-      "title": "Menü ",
-      "task": "Sonsuz kategorili menü tasarımı yapılacak.",
+      "title": "Menüü",
+      "task": "Sonsuz kategorili menü tasarımı yapılacakkkk.",
       "id": 9
     },
     {
@@ -34,6 +29,11 @@
       "title": "Login düzenleme",
       "task": "Login sayfasına çift korumalı giriş eklenecek.",
       "id": 14
+    },
+    {
+      "title": "renk değiştirme",
+      "task": "menülerde renk değiştirme",
+      "id": 15
     }
   ]
 }

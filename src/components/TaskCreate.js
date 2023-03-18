@@ -1,6 +1,9 @@
-import { useState } from "react";
-function TaskCreate({onCreate,onUpdate,indexId,task,taskEdit}) {
+import { useState,useContext } from "react";
+import TaskContext from "../context/tasks";
 
+function TaskCreate({onUpdate,indexId,task,taskEdit}) {
+    const {onCreate} = useContext(TaskContext)
+    
     const [titlee, setTitle] = useState(task?task.title:"")
     const [taske, setTask] = useState(task?task.task:"")
     

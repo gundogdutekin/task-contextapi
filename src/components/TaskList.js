@@ -1,6 +1,6 @@
 import TaskShow from "./TaskShow";
 
-function TaskList({editHidden,handleDelete,tasks, onUpdate}) {
+function TaskList({tasks}) {
   
     return ( 
         <div className="task-list">
@@ -10,7 +10,7 @@ function TaskList({editHidden,handleDelete,tasks, onUpdate}) {
          {
             tasks.map((item,index) => {
              return(
-                <TaskShow key={index}  onUpdate={onUpdate} editHidden={editHidden} indexId={index}  deleteItem={handleDelete}  task={item} />
+                <TaskShow key={index} task={item} />
              )  
             })
          }

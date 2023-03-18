@@ -1,11 +1,15 @@
-import { useState } from "react"
+import { useState,useContext } from "react"
+import TaskContext from "../context/tasks"
 import TaskCreate from "./TaskCreate"
 
-function TaskShow({editHidden,indexId,deleteItem,task,onUpdate}) {
+
+function TaskShow({task}) {
+    const {editHidden,handleDelete,updateTask} = useContext(TaskContext)
     const [showedit, setShowedit] = useState(editHidden ? editHidden:false)
-    const handleDelete=(e)=>{
+
+    const itemDelete=(e)=>{
         e.preventDefault()
-        deleteItem(e.target.value)
+        handleDelete(e.target.value)
         
     }
     const handleEditChange=(e)=>{
@@ -15,7 +19,7 @@ function TaskShow({editHidden,indexId,deleteItem,task,onUpdate}) {
     const handleSubmit=(id,title,task)=>{
        
         setShowedit(false)
-        onUpdate(id,title,task)
+        updateTask(id,title,task)
     }
     return ( 
         <div className="card"> 
@@ -30,7 +34,7 @@ function TaskShow({editHidden,indexId,deleteItem,task,onUpdate}) {
                 {task.task}
             </div>
             <div className="card-footer">
-                <button value={task.id} onClick={handleDelete}   className="task-list-button danger">Sil</button>
+                <button value={task.id} onClick={itemDelete}   className="task-list-button danger">Sil</button>
                 <button value={task.id} onClick={handleEditChange}  className="task-list-button">Düzenle</button>
             </div>
           </>
